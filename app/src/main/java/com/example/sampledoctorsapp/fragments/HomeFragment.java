@@ -33,12 +33,13 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
-        circle1 = view.findViewById(R.id.circle1);
+        bookAppointments = view.findViewById(R.id.bookAppointments);
+
+        /*circle1 = view.findViewById(R.id.circle1);
         circle2 = view.findViewById(R.id.circle2);
         circle3 = view.findViewById(R.id.circle3);
 
         doctor2= view.findViewById(R.id.doctor2);
-        bookAppointments = view.findViewById(R.id.bookAppointments);
 
         circle1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +69,7 @@ public class HomeFragment extends Fragment {
 
 
             }
-        });
+        });*/
 
         bookAppointments.setOnClickListener(new View.OnClickListener() {
             @Override
