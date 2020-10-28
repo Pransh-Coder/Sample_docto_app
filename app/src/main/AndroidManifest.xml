@@ -9,7 +9,13 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleDoctorsApp">
-        <activity android:name=".TimeSlotActivity"></activity>
+        <activity android:name=".VideoCall"></activity>
+        <activity
+            android:name=".fragments.AudioCall"
+            android:label="@string/title_activity_audio_call"
+            android:theme="@style/Theme.SampleDoctorsApp.NoActionBar" />
+        <activity android:name=".DoctorDetails" />
+        <activity android:name=".TimeSlotActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".BookAppointmentActivity" />
         <activity android:name=".GettingStartedActivity" />

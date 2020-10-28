@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.sampledoctorsapp.DoctorDetails;
 import com.example.sampledoctorsapp.ProfileActivity;
 import com.example.sampledoctorsapp.R;
 
@@ -37,9 +38,17 @@ public class HomeFragment extends Fragment {
         circle2 = view.findViewById(R.id.circle2);
         circle3 = view.findViewById(R.id.circle3);
 
+        ImageView doctorDetails = view.findViewById(R.id.doctor2);
         doctor2= view.findViewById(R.id.doctor2);
         bookAppointments = view.findViewById(R.id.bookAppointments);
 
+        doctorDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
         circle1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +74,8 @@ public class HomeFragment extends Fragment {
         doctor2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getContext(), DoctorDetails.class);
+                startActivity(intent);
 
             }
         });
